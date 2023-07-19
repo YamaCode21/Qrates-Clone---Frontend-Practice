@@ -3,30 +3,31 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { DesplegableComponent } from './desplegable/desplegable.component';
-import { MenuComponent } from './menu/menu.component';
-import { EtiquetasComponent } from './etiquetas/etiquetas.component';
-import { ButtonComponent } from './button/button.component';
-import { ArticleComponent } from './article/article.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { MainComponent } from './layout/main/main.component';
+import { ButtonComponent } from './components/button/button.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { StudioSectionComponent } from './components/studio-section/studio-section.component';
+import { FansPhotosComponent } from './components/fans-photos/fans-photos.component';
+import { FansSectionComponent } from './components/fans-section/fans-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
-    DesplegableComponent,
-    MenuComponent,
-    EtiquetasComponent,
+    HeaderComponent,
+    NavbarComponent,
+    MainComponent,
     ButtonComponent,
-    ArticleComponent
+    BannerComponent,
+    StudioSectionComponent,
+    FansPhotosComponent,
+    FansSectionComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
