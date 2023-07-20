@@ -1,5 +1,30 @@
 @import "~normalize.css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:root {
+  --black: hsla(0, 0%, 0%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --primary: hsla(58, 100%, 51%, 1);
+  --second: hsla(69, 12%, 88%, 1);
+
+  --font-primary: "Noto Sans JP", sans-serif;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
 }
