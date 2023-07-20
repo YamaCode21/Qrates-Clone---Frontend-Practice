@@ -9,6 +9,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color: var(--black);
+    cursor: pointer;
   }
 
   &__sublist {
@@ -44,7 +45,6 @@
 
 .dropdown {
   padding-left: 8px;
-  cursor: pointer;
   transition-property: transform;
   transition-duration: .3s;
 

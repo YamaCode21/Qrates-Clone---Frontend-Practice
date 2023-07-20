@@ -1,10 +1,13 @@
-<li *ngIf="activeSubList" class="p-r flex-al-c">
-	<a href="" class="navbar__item">{{ text }}</a>
+<li
+	*ngIf="activeSubList"
+	class="p-r flex-al-c"
+	(click)="toggleSublistVisibility()"
+>
+	<div href="#" class="navbar__item">{{ text }}</div>
 	<img
 		src="../../../assets/chevron-up.svg"
 		alt="Chevron Up"
 		class="dropdown"
-		(click)="toggleSublistVisibility()"
 		#dropdown
 	/>
 	<ul class="navbar__sublist" #sublist>
@@ -15,5 +18,5 @@
 </li>
 
 <li *ngIf="!activeSubList">
-	<a href="" class="navbar__item">{{ text }}</a>
+	<a href="#" class="navbar__item">{{ text }}</a>
 </li>
