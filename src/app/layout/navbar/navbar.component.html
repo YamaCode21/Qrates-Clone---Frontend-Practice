@@ -1,1 +1,51 @@
-<p>navbar works!</p>
+<div class="navbar-continer flex-al-c">
+	<div class="flex-al-c">
+		<div class="image-container">
+			<img src="../../../assets/qrates-logo.svg" alt="Qrates"class="logo" />
+		</div>
+		<nav class="navbar">
+			<ul class="navbar__list">
+				<li>
+					<a href="" class="navbar__item">RECORDS & CASSETTES</a>
+				</li>
+				<li>
+					<a href="" class="navbar__item">DISCOVER</a>
+				</li>
+				<li class="flex-al-c">
+					<a href="" class="navbar__item">FOR ARTISTS</a>
+					<img src="../../../assets/chevron-up.svg" alt="Chevron Up" class="dropdown" (click)="toggleSublistVisibility()" #dropdown />
+					<ul class="navbar__sublist" #sublist>
+						<li>
+							<a href="" class="navbar__subitem">Why Qrates?</a>
+						</li>
+						<li>
+							<a href="" class="navbar__subitem">Make & Sell</a>
+						</li>
+						<li>
+							<a href="" class="navbar__subitem">Crowdfunding</a>
+						</li>
+						<li>
+							<a href="" class="navbar__subitem">Our Services</a>
+						</li>
+						<li>
+							<a href="" class="navbar__subitem">Artist Toolkit</a>
+						</li>
+						<li>
+							<a href="" class="navbar__subitem">Referral Program</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="" class="navbar__item">OUR COMPANY</a>
+				</li>
+			</ul>
+			</nav>
+			<div>
+				<img src="../../../assets/search.svg" alt="Icon Search" class="search" />
+			</div>
+	</div>
+	<div class="buttons-container">
+		<a href="" class="navbar__item">LOG IN</a>
+		<oc-button></oc-button>
+	</div>
+</div>
