@@ -1,0 +1,13 @@
+.btn-primary {
+	color: var(--white);
+	min-width: 211px;
+	height: 50px;
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: 700;
+	border-radius: 50px;
+	background: var(--black);
+	display: grid;
+	padding: 0 30px;
+	place-items: center;
+}

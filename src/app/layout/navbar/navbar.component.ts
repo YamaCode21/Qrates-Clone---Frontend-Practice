@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'oc-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+	selector: 'oc-navbar',
+	templateUrl: './navbar.component.html',
+	styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
-
-}
+export class NavbarComponent {}

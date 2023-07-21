@@ -12,6 +12,9 @@ import { BannerComponent } from './components/banner/banner.component';
 import { StudioSectionComponent } from './components/studio-section/studio-section.component';
 import { FansPhotosComponent } from './components/fans-photos/fans-photos.component';
 import { FansSectionComponent } from './components/fans-section/fans-section.component';
+import { NavItemComponent } from './components/navbar/nav-item/nav-item.component';
+import { NavSubItemComponent } from './components/navbar/nav-sub-item/nav-sub-item.component';
+import { TagComponent } from './components/tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { FansSectionComponent } from './components/fans-section/fans-section.com
     StudioSectionComponent,
     FansPhotosComponent,
     FansSectionComponent,
+    NavItemComponent,
+    NavSubItemComponent,
+    TagComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
