@@ -4,4 +4,45 @@ header {
     width: 100vw;
     background-color: red;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#izquierda-header {
+    width: 50%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#derecha-header {
+    width: 50%;
+    background-color: green;
+}
+
+#abajo-header {
+    width: 100%;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+span {
+    font-size: 70px;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+#sombra1 {
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+#sombra {
+    display: flex;
+    background-color: red;
 }
