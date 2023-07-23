@@ -1,24 +1,28 @@
 header {
     margin: 0;
+    margin-top: 50px;
     padding: 0;
-    width: 100vw;
-    background-color: red;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
 }
 
 #izquierda-header {
-    width: 50%;
-    background-color: blue;
+    width: 40%;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 #derecha-header {
-    width: 50%;
-    background-color: green;
+    width: 55%;
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #abajo-header {
@@ -27,6 +31,8 @@ header {
 
 h1 {
     font-size: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 span {
@@ -34,15 +40,48 @@ span {
     font-weight: bold;
     position: relative;
     color: white;
-    -webkit-text-stroke: 1px black;
 }
-#sombra1 {
+
+#borde1 {
+    -webkit-text-stroke: 2px black;
+}
+
+#borde2 {
     position: absolute;
     font-size: 70px;
     font-weight: bold;
     color: white;
+    -webkit-text-stroke: 4px black;
 }
-#sombra {
+
+#atras {
     display: flex;
-    background-color: red;
+}
+
+h2 {
+    margin-top: -10px;
+    width: 50%;
+}
+
+#mano-icono {
+    width: 20%;
+    max-width: 200px;
+    transform: rotate(5deg);
+    position: absolute;
+    top: 50%;
+    left: -8.5%;
+    z-index: 2;
+}
+
+#foto-banner {
+    width: 650px;
+    border: 2px solid black;
+    transform: rotate(6deg);
+    margin-left: 5%;
+    z-index: 1;
+}
+
+p {
+    writing-mode: vertical-rl;
+    padding-right: 20px;
 }
