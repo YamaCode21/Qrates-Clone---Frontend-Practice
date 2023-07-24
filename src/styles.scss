@@ -9,10 +9,10 @@
 }
 
 :root {
-  --black: hsla(0, 0%, 0%, 1);
-  --white: hsla(0, 0%, 100%, 1);
-  --primary: hsla(58, 100%, 51%, 1);
-  --second: hsla(69, 12%, 88%, 1);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --primary: hsl(58, 100%, 51%);
+  --second: hsl(69, 12%, 88%);
 
   --font-primary: "Noto Sans JP", sans-serif;
 }

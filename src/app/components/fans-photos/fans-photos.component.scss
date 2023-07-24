@@ -1,0 +1,15 @@
+.fans-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(71, 6%, 61%);
+
+  img {
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--black);
+  }
+}
