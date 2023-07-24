@@ -47,8 +47,10 @@
   padding-left: 8px;
   transition-property: transform;
   transition-duration: .3s;
+  transform: rotate(180deg) translateX(-50%);
+  cursor: pointer;
 
   &.active {
-    transform: rotate(180deg) translateX(-50%);
+    transform: rotate(0deg) translateX(0);
   }
 }
