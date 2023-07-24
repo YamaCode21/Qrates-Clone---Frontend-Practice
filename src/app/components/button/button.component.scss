@@ -10,13 +10,21 @@
   place-items: center;
   cursor: pointer;
 
-  &-primary {
+  &-dark {
     color: var(--white);
     background: var(--black);
   }
 
-  &-secondary {
+  &-light {
     color: var(--black);
     background: var(--white);
+  }
+
+  &-primary {
+    color: var(--black);
+    background: var(--primary);
+    min-width: 366px;
+    height: 75px;
+    letter-spacing: 0.18px;
   }
 }
