@@ -29,6 +29,13 @@
         background-image: url('../../../assets/images/icon-subrayado.png');
       }
     }
+
+    @media (max-width: 768px) {
+      margin-bottom: 55px;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      letter-spacing: -1px;
+    }
   }
 
   &__description {
@@ -39,6 +46,12 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: -0.27px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 71px;
+      font-size: 1.125rem;
+    }
   }
 }
 
@@ -60,5 +73,17 @@
     &.active {
       opacity: 1;
     }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 70%;
   }
 }

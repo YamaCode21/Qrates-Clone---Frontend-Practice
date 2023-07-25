@@ -13,10 +13,11 @@
 
     li {
       position: relative;
+      overflow: hidden;
     }
 
     @media screen and (max-width: 1200px) {
-    padding: 0 15px;
+      padding: 0 15px;
       column-gap: 15px;
     }
   }
@@ -47,4 +48,21 @@
 .flex-al-c {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-continer {
+    height: 65px;
+    padding: 0 20px;
+  }
+
+  .navbar__desktop,
+  .buttons-container,
+  .search-desktop {
+    display: none !important;
+  }
+
+  .logo {
+    height: 45px;
+  }
 }
