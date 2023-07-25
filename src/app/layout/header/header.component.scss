@@ -18,7 +18,7 @@
 
 #derecha-header {
     width: 60%;
-    padding-left: 5%;
+    padding: 0 35px 0 30px;
     position: relative;
     display: flex;
     align-items: center;
@@ -40,6 +40,7 @@ span {
     font-weight: bold;
     position: relative;
     color: white;
+
 }
 
 #borde1 {
@@ -48,10 +49,13 @@ span {
 
 #borde2 {
     position: absolute;
+    display: inline-block;
+    width: 38%;
     font-size: 70px;
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 4px var(--black);
+    background-color: blue;
 }
 
 #atras {
@@ -78,7 +82,7 @@ h2 {
 
 #foto-banner {
     max-width: 800px;
-    min-width: 500px;
+    min-width: 400px;
     border: 3px solid var(--black);
     transform: rotate(5deg);
     margin-left: 8%;
@@ -89,7 +93,7 @@ p {
     font-size: 15px;
     writing-mode: vertical-rl;
     margin-left: 80px;
-    margin-right: 35px;
+    // margin-right: 35px;
 }
 
 .btn-container {
