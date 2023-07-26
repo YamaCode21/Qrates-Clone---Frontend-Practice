@@ -15,6 +15,7 @@ import { FansSectionComponent } from './components/fans-section/fans-section.com
 import { NavItemComponent } from './components/navbar/nav-item/nav-item.component';
 import { NavSubItemComponent } from './components/navbar/nav-sub-item/nav-sub-item.component';
 import { TagComponent } from './components/tag/tag.component';
+import { FansTemplateComponent } from './components/fans-template/fans-template.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { TagComponent } from './components/tag/tag.component';
     NavItemComponent,
     NavSubItemComponent,
     TagComponent,
+    FansTemplateComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
