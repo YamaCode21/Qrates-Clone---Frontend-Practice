@@ -1,0 +1,14 @@
+.footer {
+  &__container {
+    position: relative;
+    width: 100%;
+    padding: 78px 60px 84px 80px;
+    color: var(--white);
+    background-color: var(--black);
+
+  }
+
+  &__content {
+    &--options {}
+  }
+}
