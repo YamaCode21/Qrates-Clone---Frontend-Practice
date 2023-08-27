@@ -16,26 +16,28 @@ import { NavItemComponent } from './components/navbar/nav-item/nav-item.componen
 import { NavSubItemComponent } from './components/navbar/nav-sub-item/nav-sub-item.component';
 import { TagComponent } from './components/tag/tag.component';
 import { FooterOptionsColumnComponent } from './components/footer/footer-options-column/footer-options-column.component';
+import { FansTemplateComponent } from './components/fans-template/fans-template.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    HeaderComponent,
-    NavbarComponent,
-    MainComponent,
-    ButtonComponent,
-    BannerComponent,
-    StudioSectionComponent,
-    FansPhotosComponent,
-    FansSectionComponent,
-    NavItemComponent,
-    NavSubItemComponent,
-    TagComponent,
-    FooterOptionsColumnComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		FooterComponent,
+		HeaderComponent,
+		NavbarComponent,
+		MainComponent,
+		ButtonComponent,
+		BannerComponent,
+		StudioSectionComponent,
+		FansPhotosComponent,
+		FansSectionComponent,
+		NavItemComponent,
+		NavSubItemComponent,
+		TagComponent,
+		FansTemplateComponent,
+		FooterOptionsColumnComponent,
+	],
+	imports: [BrowserModule, AppRoutingModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
 export class AppModule {}

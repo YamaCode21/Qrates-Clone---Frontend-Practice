@@ -19,8 +19,8 @@
 #derecha-header {
     width: 60%;
     padding: 0 35px 0 30px;
-    position: relative;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
 }
@@ -33,9 +33,10 @@ h1 {
     font-size: 70px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-span {
+.titulo {
     font-size: 70px;
     font-weight: bold;
     position: relative;
@@ -50,12 +51,10 @@ span {
 #borde2 {
     position: absolute;
     display: inline-block;
-    width: 38%;
     font-size: 70px;
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 4px var(--black);
-    background-color: blue;
 }
 
 #atras {
@@ -65,27 +64,31 @@ span {
 h2 {
     font-size: 25px;
     margin-top: -10px;
-    max-width: 80%;
+    max-width: 86%;
     min-width: 72%;
     line-height: 1.5;
 }
 
+#palabra {
+    white-space: nowrap;
+}
+
 #mano-icono {
-    width: 23%;
+    width: 20%;
     max-width: 200px;
     transform: rotate(5deg);
     position: absolute;
-    top: 65%;
-    left: 4.5%;
+    bottom: 8%;
+    margin-left: 8px;
     z-index: 2;
 }
 
 #foto-banner {
-    max-width: 800px;
-    min-width: 400px;
+    width: 800px;
+    min-width: 340px;
     border: 3px solid var(--black);
     transform: rotate(5deg);
-    margin-left: 8%;
+    margin-left: 13%;
     z-index: 1;
 }
 
@@ -97,5 +100,8 @@ p {
 }
 
 .btn-container {
+    width: 100%;
+    padding: 20px 30px;
     display: flex;
+    gap: 10px;
 }
