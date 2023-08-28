@@ -12,4 +12,7 @@ export class FansTemplateComponent {
   @Input() textbtn1: string = '';
   @Input() textbtn2: string = '';
   @Input() backgroundColor: string = '';
+  @Input() img1: string = '';
+  @Input() alt1: string = '';
+  @Input() flexDirection: string = '';
 }

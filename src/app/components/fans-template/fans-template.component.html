@@ -1,11 +1,14 @@
-<section>
+<section [style.flex-direction]="flexDirection">
     <div class="background-fan" [style.background-color]="backgroundColor">
         <span><b>FOR {{type}}</b></span>
         <h2>{{title}}</h2>
-        <p>{{description}}</p>
+        <p><b>{{description}}</b></p>
         <div class="btn-container">
             <oc-button type="dark" text={{textbtn1}}></oc-button>
             <oc-button type="light" text={{textbtn2}}></oc-button>
         </div>
+    </div>
+    <div class="img-fan-container">
+        <img src="{{img1}}" alt="{{alt1}}">
     </div>
 </section>
