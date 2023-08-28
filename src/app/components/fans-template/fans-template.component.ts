@@ -11,8 +11,5 @@ export class FansTemplateComponent {
   @Input() description: string = '';
   @Input() textbtn1: string = '';
   @Input() textbtn2: string = '';
-  @Input() img1: string = '';
-  @Input() img2: string = '';
-  @Input() alt1: string = '';
-  @Input() alt2: string = '';
+  @Input() backgroundColor: string = '';
 }

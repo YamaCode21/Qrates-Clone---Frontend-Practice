@@ -1,15 +1,11 @@
 <section>
-    <div>
-        <span>FOR {{type}}</span>
+    <div class="background-fan" [style.background-color]="backgroundColor">
+        <span><b>FOR {{type}}</b></span>
         <h2>{{title}}</h2>
         <p>{{description}}</p>
         <div class="btn-container">
             <oc-button type="dark" text={{textbtn1}}></oc-button>
             <oc-button type="light" text={{textbtn2}}></oc-button>
         </div>
-    </div>
-    <div>
-        <img src="{{img1}}" alt="{{alt1}}">
-        <img src="{{img2}}" alt="{{alt2}}">
     </div>
 </section>
