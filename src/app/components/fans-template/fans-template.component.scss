@@ -10,7 +10,6 @@ section {
     flex-direction: column;
     align-items: start;
     padding-left: 30px;
-    border: 2px solid black;
 }
 
 span {
@@ -22,7 +21,7 @@ span {
 
 h2 {
     font-size: 2.3rem;
-    width: 400px;
+    width: 394px;
 }
 
 p {
@@ -45,4 +44,5 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
 }
