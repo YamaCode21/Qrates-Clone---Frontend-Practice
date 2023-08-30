@@ -1,6 +1,11 @@
-<button class="btn btn-{{ type }}">
-	<span *ngIf="type !== 'languaje'">{{ text }}</span>
-	<div *ngIf="type === 'languaje'">
-		<div *ngFor="let item of languajes">{{ item }}</div>
-	</div>
+<button class="btn btn-{{ type }}" *ngIf="type !== 'languaje'">
+	{{ text }}
 </button>
+
+<div class="select-{{ type }}" *ngIf="type === 'languaje'">
+	<div class="languaje-select">{{ languajes[0] }}</div>
+
+	<div *ngFor="let item of languajes">
+		<span *ngIf="item !== languajes[0]">{{ item }}</span>
+	</div>
+</div>

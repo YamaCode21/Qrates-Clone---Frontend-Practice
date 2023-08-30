@@ -1,5 +1,5 @@
 <footer class="footer__container">
-	<div class="footer__content--options">
+	<div class="footer__content--options flex">
 		<oc-footer-options-column
 			title="FOR ARTISTS"
 			[options]="column1"
@@ -17,11 +17,23 @@
 			[options]="column4"
 		></oc-footer-options-column>
 	</div>
-	<div class="footer__content--infor">
+	<div class="footer__content--infor flex">
 		<img src="../../../assets/svg/logo-completo.svg" alt="Qrates" />
-		<div class="footer__content--details">
-			<oc-button [type]="'languaje'" languajes="languajes"></oc-button>
+		<div class="footer__content--details flex">
+			<oc-button [type]="'languaje'" [languajes]="languajes"></oc-button>
 			<oc-media-socials></oc-media-socials>
+			<ul class="footer__content--legal-nav flex">
+				<li>
+					<a href="" class="footer__content-legal--link">Terms of Service</a>
+				</li>
+				<li>
+					<a href="" class="footer__content-legal--link">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="" class="footer__content-legal--link">Legal Information</a>
+				</li>
+				<li><a href="" class="footer__content-legal--link">© TDMS Inc.</a></li>
+			</ul>
 		</div>
 	</div>
 </footer>

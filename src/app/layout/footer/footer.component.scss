@@ -10,7 +10,6 @@
 
   &__content {
     &--options {
-      display: flex;
       font-size: 1.25rem;
       letter-spacing: -0.27px;
       margin-bottom: 290px;
@@ -21,8 +20,20 @@
     }
 
     &--infor {
-      display: flex;
       justify-content: space-between;
     }
+
+    &--details {
+      flex-direction: column;
+      align-items: flex-end
+    }
+
+    &-legal--link {
+      color: var(--white);
+    }
   }
+}
+
+.flex {
+  display: flex;
 }
