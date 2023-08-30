@@ -17,6 +17,7 @@ import { NavSubItemComponent } from './components/navbar/nav-sub-item/nav-sub-it
 import { TagComponent } from './components/tag/tag.component';
 import { FooterOptionsColumnComponent } from './components/footer/footer-options-column/footer-options-column.component';
 import { FansTemplateComponent } from './components/fans-template/fans-template.component';
+import { MediaSocialsComponent } from './components/footer/media-socials/media-socials.component';
 
 @NgModule({
 	declarations: [
@@ -35,6 +36,7 @@ import { FansTemplateComponent } from './components/fans-template/fans-template.
 		TagComponent,
 		FansTemplateComponent,
 		FooterOptionsColumnComponent,
+  MediaSocialsComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],

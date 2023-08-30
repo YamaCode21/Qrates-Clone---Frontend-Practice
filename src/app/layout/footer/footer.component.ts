@@ -26,4 +26,6 @@ export class FooterComponent {
 	column3: string[] = ['About Qrates', 'Careers', 'Partners'];
 
 	column4: string[] = ['Support Center', 'Contact Us', 'Returns', 'Shipping'];
+
+	languajes: string[] = ['English', 'Español'];
 }

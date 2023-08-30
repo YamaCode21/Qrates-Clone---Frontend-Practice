@@ -1,5 +1,4 @@
 .btn {
-
   height: 50px;
   font-size: 1rem;
   line-height: 1rem;
@@ -9,6 +8,7 @@
   padding: 0 25.5px;
   place-items: center;
   cursor: pointer;
+  border: 2px solid var(--black);
 
   &-dark {
     color: var(--white);
@@ -26,5 +26,12 @@
     min-width: 366px;
     height: 75px;
     letter-spacing: 0.18px;
+    border: unset;
+  }
+
+  &-languaje {
+    border-radius: 0;
+    border: 2px solid var(--white);
+    background-color: transparent;
   }
 }
