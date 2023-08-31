@@ -29,20 +29,3 @@
     border: unset;
   }
 }
-
-.select-languaje {
-  border-radius: 0;
-  border: 2px solid var(--white);
-  background-color: transparent;
-  cursor: pointer;
-  height: 50px;
-  line-height: 46px;
-  min-width: 100px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding: 0px 55px 0px 20px;
-
-  a {
-    color: var(--white);
-  }
-}

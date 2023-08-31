@@ -1,0 +1,30 @@
+.language {
+  &-selector {
+    margin-bottom: 25px;
+    overflow-y: hidden;
+    position: relative;
+    height: 3.125rem;
+  }
+
+  &--options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  &--item {
+    background-color: var(--black);
+    min-width: 100px;
+    border: 2px solid var(--white);
+    border-top: unset;
+    cursor: pointer;
+    height: 3.125rem;
+    font-size: 1rem;
+    line-height: 3.125rem;
+    padding: 0px 55px 0px 20px;
+  }
+}
+
+.selected {
+  border: 2px solid var(--white);
+}

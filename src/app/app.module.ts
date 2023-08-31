@@ -18,6 +18,7 @@ import { TagComponent } from './components/tag/tag.component';
 import { FooterOptionsColumnComponent } from './components/footer/footer-options-column/footer-options-column.component';
 import { FansTemplateComponent } from './components/fans-template/fans-template.component';
 import { MediaSocialsComponent } from './components/footer/media-socials/media-socials.component';
+import { LanguageSelectorComponent } from './components/footer/language-selector/language-selector.component';
 
 @NgModule({
 	declarations: [
@@ -37,6 +38,7 @@ import { MediaSocialsComponent } from './components/footer/media-socials/media-s
 		FansTemplateComponent,
 		FooterOptionsColumnComponent,
   MediaSocialsComponent,
+  LanguageSelectorComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
