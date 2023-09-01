@@ -4,6 +4,11 @@
     overflow-y: hidden;
     position: relative;
     height: 3.125rem;
+    min-width: 155px;
+
+    &.active {
+      overflow-y: visible;
+    }
   }
 
   &--options {
@@ -13,18 +18,37 @@
   }
 
   &--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--black);
-    min-width: 100px;
     border: 2px solid var(--white);
     border-top: unset;
     cursor: pointer;
     height: 3.125rem;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: .92rem;
     line-height: 3.125rem;
-    padding: 0px 55px 0px 20px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  &--hidden:hover {
+    background: hsl(36, 3%, 32.7%);
   }
 }
 
 .selected {
   border: 2px solid var(--white);
+}
+
+.dropdown {
+  height: 20px;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: .3s;
+  transform: rotate(0deg) translateX(0);
+
+  &.active {
+    transform: rotate(180deg) translateX(0%);
+  }
 }
