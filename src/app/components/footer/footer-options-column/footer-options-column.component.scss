@@ -1,13 +1,16 @@
 .footer-content__option {
   &--title {
     margin-bottom: 24px;
-    font-weight: bold;
-    letter-spacing: -0.27px;
+    font-weight: 500;
     letter-spacing: 0.23px;
     line-height: 1;
   }
 
   line-height: 2.25rem;
+
+  @media screen and (max-width: 990px) {
+    line-height: 1.6rem;
+  }
 
   a {
     color: var(--white);
