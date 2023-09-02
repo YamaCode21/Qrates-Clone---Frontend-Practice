@@ -27,3 +27,13 @@ p {
     bottom: 22px;
     font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+    section {
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+}

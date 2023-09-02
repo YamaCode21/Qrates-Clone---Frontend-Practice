@@ -25,6 +25,15 @@
     justify-content: space-between;
 }
 
+#derecha-header-responsive {
+    display: none;
+    width: 60%;
+    padding: 0 35px 0 30px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #abajo-header {
     width: 100%;
 }
@@ -75,22 +84,11 @@ h2 {
 
 #mano-icono {
     width: 20%;
-    max-width: 200px;
     transform: rotate(5deg);
     position: absolute;
     bottom: 8%;
     margin-left: 8px;
     z-index: 2;
-}
-
-#derecha-header-responsive {
-    display: none;
-    width: 60%;
-    padding: 0 35px 0 30px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .foto-banner {
@@ -121,10 +119,10 @@ p {
     }
 
     #derecha-header-responsive {
+        display: flex;
         margin-top: 20px;
         margin-bottom: 55px;
         width: 100%;
-        display: flex;
         padding: 0;
     }
 
@@ -153,12 +151,40 @@ p {
     }
 
     p {
-        margin: 0;
-        margin-right: 30px;
+        margin: 0 30px;
     }
 
     h2 {
         width: 95%;
         text-align: center;
+    }
+
+    #mano-icono {
+        bottom: auto;
+        top: 1%;
+        margin-left: 50px;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.375rem;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    #borde2 {
+        font-size: 3rem;
     }
 }

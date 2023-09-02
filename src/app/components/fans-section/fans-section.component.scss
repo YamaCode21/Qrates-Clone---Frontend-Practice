@@ -7,7 +7,7 @@ div {
     position: absolute;
     top: 50%;
     left: 41%;
-    max-width: 10.5%;
+    width: 10.5%;
     min-width: 156px;
 }
 
@@ -15,6 +15,20 @@ div {
     position: absolute;
     top: 60%;
     right: -30px;
-    max-width: 10.5%;
+    width: 10.5%;
     min-width: 156px;
+}
+
+@media screen and (max-width: 768px) {
+    .icon1 {
+        width: 27%;
+        top: 4%;
+        left: 73%;
+    }
+
+    .icon2 {
+        width: 27%;
+        top: 45%;
+        right: -25px;
+    }
 }
