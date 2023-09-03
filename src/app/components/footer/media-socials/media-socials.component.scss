@@ -1,8 +1,14 @@
 .media-socials {
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
+  column-gap: 10px;
 
   img {
-    width: 36px;
-    margin: 0 5px;
+    height: 36px;
+  }
+
+  @media screen and (max-width: 990px) {
+    column-gap: 1%;
   }
 }

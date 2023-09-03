@@ -1,8 +1,6 @@
 <ul class="footer-content__column">
 	<li class="footer-content__option--title">{{ title }}</li>
-	<div *ngFor="let item of options">
-		<li class="footer-content__option">
-			<a href="/">{{ item }}</a>
-		</li>
-	</div>
+	<li *ngFor="let item of options" class="footer-content__option">
+		<a href="/">{{ item }}</a>
+	</li>
 </ul>

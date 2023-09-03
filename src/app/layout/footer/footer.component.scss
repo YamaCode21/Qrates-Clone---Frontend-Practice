@@ -5,10 +5,6 @@
     padding: 80px;
     color: var(--white);
     background-color: var(--black);
-
-    /* @media screen and (max-width: 990px) {
-      padding: 40px;
-    } */
   }
 
   &__content {
@@ -25,6 +21,7 @@
       display: grid;
       grid-template-areas:
         'logo selector'
+        'logo social'
         'logo links';
       justify-content: space-between;
 
@@ -33,13 +30,8 @@
       }
     }
 
-    &--details {
-      flex-direction: column;
-      align-items: flex-end;
-      grid-area: links;
-    }
-
     &--legal-nav {
+      grid-area: links;
       margin: 0;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -58,6 +50,18 @@
 
 .language-selector-container {
   justify-content: flex-end;
+  grid-area: selector;
+
+  @media screen and (max-width: 770px) {
+    &>* {
+      width: 100%;
+    }
+  }
+}
+
+.media-socials-container {
+  justify-content: flex-end;
+  grid-area: social;
 }
 
 .flex {
@@ -66,6 +70,16 @@
 
 .m-40 {
   padding-left: 40px;
+}
+
+.copy {
+  &-hidden {
+    display: block;
+  }
+
+  &-small-hidden {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -79,7 +93,54 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         font-size: 1.1rem;
+        margin-bottom: 62px;
+        row-gap: 62px;
       }
+
+      &--infor {
+        grid-template-areas:
+          'social'
+          'logo'
+          'selector'
+          'links';
+        justify-content: unset;
+
+        .logo {
+          width: 95%;
+          margin: 0 2.5%;
+          margin-bottom: 66px;
+        }
+      }
+
+      &--legal-nav {
+        padding: 0;
+        justify-content: space-between;
+      }
+
+      &-legal--link {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .media-socials-container {
+    justify-content: center;
+    margin: 18px 0 131px;
+
+    &>* {
+      width: 100%;
+    }
+  }
+
+  .copy {
+    &-hidden {
+      display: none;
+    }
+
+    &-small-hidden {
+      display: block;
+      margin-top: 8px;
+      text-align: center;
     }
   }
 }
