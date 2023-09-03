@@ -45,24 +45,43 @@
   width: 1.25rem;
 }
 
+.mobile-btn {
+  display: none;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
 .flex-al-c {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 990px) {
-  .navbar-continer {
-    height: 65px;
-    padding: 0 20px;
+  .navbar {
+    &-continer {
+      height: 65px;
+      padding: 0 20px;
+    }
+
+    &-subcontainer {
+      width: 100%;
+      justify-content: space-between;
+      padding-right: 25px;
+    }
   }
 
   .navbar__desktop,
-  .buttons-container,
-  .search-desktop {
-    display: none !important;
+  .buttons-container {
+    display: none;
   }
 
   .logo {
     height: 45px;
+  }
+
+  .search,
+  .mobile-btn {
+    display: block;
+    width: 30px;
   }
 }
